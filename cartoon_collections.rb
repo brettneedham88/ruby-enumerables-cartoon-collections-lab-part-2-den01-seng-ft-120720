@@ -20,5 +20,5 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   #(1..10).find           { |i| i % 5 == 0 && i % 7 == 0 }
   
-  planeteer_calls.find { |call| planeteer_calls && valid_calls}
+  planeteer_calls.find { |call| call % planeteer_calls && call % valid_calls}
 end
